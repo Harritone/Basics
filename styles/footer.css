@@ -1,81 +1,61 @@
-/* Common footer styles */
-.footer-wrapper {
-  height: 400px;
-  background-color: #0a0f52;
-  color: #cbcbcb;
-  display: grid;
-  padding: 0px 500px;
-}
- /* banner row */
-.footer-wrapper > .banner-row {
-  display: flex;
-  justify-content: center;
+.footer {
+    background-color: #0a0f52;
+    color: #cbcbcb;
+    font-family: "Ubuntu Condensed", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    margin-top: -4px;
 }
 
-.footer-wrapper > .banner-row img {
-  align: center;
-  width: 216px;
-  height: 100%;
+.footer > .logo-footer img {
+    width: 180px;
+    height: 100%;
+    /* filter: brightness(50%); */
+    opacity: 0.5;
 }
 
-/* banner row */
-
-.footer-wrapper > .contact-row {
-  font-family: "Ubuntu Condensed";
-  font-weight: 600;
-  color: #cea135;
-  letter-spacing: 3px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0px 230px;
+.footer > .footer-phone-hours span {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1em;
+    letter-spacing: 2px;
 }
 
-.footer-wrapper > .contact-row > .phone {
-  color: #cbcbcb;
+.footer > .footer-phone-hours > .hours {
+    font-size: 0.8em;
+    color: #cea135;
+    text-transform: uppercase;
 }
 
-
-/* links row */
-
-.footer-wrapper > .nav-links-row {
-  margin: 20px 100px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.footer > .links-wrapper {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 400px;
 }
 
-.footer-wrapper > .nav-links-row > .footer-link {
-  width: 70px;
-  text-align: center;
+.footer > .social-media-icons-wrapper {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
 }
 
-.footer-wrapper > .nav-links-row > .footer-link a {
-  font-family: "Ubuntu Condensed", sans-serif;
-  font-size: 18px; 
-  font-weight: 500;
-  color: #cbcbcb;
-  text-decoration: none;
+.footer > .social-media-icons-wrapper a {
+    font-size: 1.5em;
+    color: #cbcbcb;
+    transition: 0.5s;
 }
 
-
-/* social links row */
-
-.footer-wrapper > .social-links-row {
-  margin: 20px 200px;
-  display: flex;
-  justify-content: space-around;
+.footer > .social-media-icons-wrapper a:hover {
+    color: #cea135;
 }
 
-.footer-wrapper > .social-links-row :nth-child(1) {
-font-size: 25px;
-}
-
-/* Copiright style */
-
-.footer-wrapper > .copiright-row {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 40px;
+.footer > .copyright-wrapper {
+    margin-bottom: 42px;
+    font-size: 0.7em;
+    color: #858585;
 }
